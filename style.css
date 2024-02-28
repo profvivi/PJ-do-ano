@@ -4,7 +4,7 @@
 :root{
     --cor-de-fundo: #2d11c8;
     --branco: #FFFFFF;
-    --verde: #08ce3d;
+    --vermelho: #ce2c08;
     --botao-ativo: #3A375E;
     --botao-inativo: rgba(58, 55, 94, 0.5);
     --texto-fundo: rgba(58,55,94, 0.3);
@@ -23,6 +23,16 @@ body {
     align-items: center;
     max-width: 1200px;
     width: 100%;
+}
+
+.titulo-principal{
+    text-align: left;
+    width: 100%;
+    font-size: 32px;
+}
+
+.titulo-principal span{
+    color: var(--vermelho);
 }
 
 /*aula2 -página responsiva*/
