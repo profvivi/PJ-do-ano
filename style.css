@@ -1,3 +1,4 @@
+/*aula1- ESTRUTURANDO O SITE*/
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 
 :root{
@@ -14,8 +15,10 @@ body {
     color: var(--branco);
     font-family: 'Chakra Petch', sans-serif;
 }
+
 .conteudo-principal {
     display: flex;
-    flex-direction: column;
+    
 }
 
+/*aula2 -página responsiva*/
