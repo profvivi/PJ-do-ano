@@ -35,6 +35,12 @@ body {
     color: var(--vermelho);
 }
 
+.botoes {
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: var(--botao-inativo);
+}
+
+
 
 
 /*aula2 -página responsiva*/
