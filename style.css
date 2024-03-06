@@ -62,6 +62,10 @@ body {
     display: block;
 } 
 
+.ativo{
+    background-color: var(--botao-ativo);
+    border-bottom: 4pix solid var(--verde) ;
+}
 /*responsividade*/
 
 @media screen and (min-width: 768px) { 
