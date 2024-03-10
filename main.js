@@ -4,6 +4,7 @@
  que existe a classe botão.Queremos todas as informações relacionadas à classe, 
  por isso utilizaremos o querySelectorAll(), cujo interior dos parênteses receberá um
  .botao entre aspas, assim como nomeamos uma classe.*/
+ 
 const botoes = document.querySelectorAll(".botao");
 
 for(let i=0;i <botoes.length;i++){
