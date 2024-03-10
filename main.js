@@ -5,8 +5,6 @@
  por isso utilizaremos o querySelectorAll(), cujo interior dos parênteses receberá um
  .botao entre aspas, assim como nomeamos uma classe.*/
 
-const botoes = document.querySelectorAll(".botao");
-
 /*Laço de repetição for para adicionar um evento de escuta, principalmente quando os 
 botões forem clicados, porque quando houver um clique, ele precisa adicionar a classe ativo no botão clicado.*/ 
 /*Entre os parênteses de for(), o primeiro valor a ser adicionado é a declaração da variável i. 
@@ -26,7 +24,9 @@ botoes[i].classList.add("ativo").*/
  Esse laço receberá entre parênteses a variável let j=0, em seguida, adicionaremos o j++.
  Em vez de adicionar, vamos remover. Portanto, adicionaremos entre as chaves do for() um botoes na posição j 
  junto ao .classList.remove("ativo").*/ 
- 
+
+const botoes = document.querySelectorAll(".botao");
+
 for(let i=0;i <botoes.length;i++){
     botoes[i].onclick = function(){
 
