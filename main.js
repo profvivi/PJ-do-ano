@@ -27,7 +27,7 @@ botoes[i].classList.add("ativo").*/
  laço de repetição for() dentro das chaves da function(), acima da linha que adiciona a classe.
  Esse laço receberá entre parênteses a variável let j=0, em seguida, adicionaremos o j++.
  Em vez de adicionar, vamos remover. Portanto, adicionaremos entre as chaves do for() um botoes na posição j 
- junto ao .classList.remove("ativo").*/
+ junto ao .classList.remove("ativo").
 
 const botoes = document.querySelectorAll(".botao");
 
@@ -41,8 +41,9 @@ for(let i=0;i <botoes.length;i++){
         botoes[i].classList.add("ativo");
     }
 }
+*/
 
-/*
+
 const botoes = document.querySelectorAll(".botao");
 const textos = document.querySelectorAll(".aba-conteudo");
 
@@ -59,8 +60,8 @@ for (let i = 0; i < botoes.length; i++) {
     }
 }
 
-const contadores = document.querySelectorAll(".contador");
+/*const contadores = document.querySelectorAll(".contador");
 const tempoObjetivo1 = new Date("2023-10-05T00:00:00");
 let tempoAtual = new Date();
 
-contadores[0].textContent = tempoObjetivo1 - tempoAtual;*/
+contadores[0].textContent = tempoObjetivo1 - tempoAtual;
