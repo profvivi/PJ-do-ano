@@ -90,7 +90,7 @@ for (let i = 0; i < botoes.length; i++) {
 const contadores = document.querySelectorAll(".contador");
 const tempoObjetivo1 = new Date("2023-10-05T00:00:00");
 
-
+//chamar uma função chamada calculaTempo(), que terá como parâmetro de entrada o tempoObjetivo1.
 contadores[0].textContent = calculaTempo(tempoObjetivo1);
 
 function calculaTempo(tempoObjetivo) {
