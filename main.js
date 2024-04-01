@@ -69,7 +69,7 @@ contadores[0].textContent = tempoObjetivo1 - tempoAtual;
 
 */
 
-//Aula 6
+//Aula6 - conversão dos números em segundos, minutos, horas e dias.
 
 const botoes = document.querySelectorAll(".botao");
 const textos = document.querySelectorAll(".aba-conteudo");
