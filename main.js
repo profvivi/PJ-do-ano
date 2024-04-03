@@ -142,7 +142,7 @@ contadores[2].textContent = calculaTempo(tempoObjetivo3); //aba de divisão de c
 contadores[3].textContent = calculaTempo(tempoObjetivo4); //aba de divisão de conteúdo, que vai receber a função
 */
 
-//2ª explicação - Automatizando o código
+//2ª explicação - Automatizando o código:
 // definição do tempo dos objetivos
 const contadores = document.querySelectorAll(".contador");
 const tempoObjetivo1 = new Date("2024-10-05T00:00:00");
@@ -165,6 +165,33 @@ contadores[0].textContent = calculaTempo(tempos[0]);
 for (let i = 0; i < contadores.length; i++) {
     contadores[i].textContent = calculaTempo(tempos[i]);
     }
+
+//3ª explicação - função para atualizar o cronômetro:
+
+// definição do tempo dos objetivos
+const contadores = document.querySelectorAll(".contador");
+const tempoObjetivo1 = new Date("2024-10-05T00:00:00");
+const tempoObjetivo2 = new Date("2024-10-30T00:00:00");
+const tempoObjetivo3 = new Date("2024-11-05T00:00:00");
+const tempoObjetivo4 = new Date("2024-12-30T00:00:00");
+
+const tempos =
+[tempoObjetivo1,tempoObjetivo2,tempoObjetivo3,tempoObjetivo4];
+
+//chamar uma função chamada calculaTempo()
+contadores[0].textContent = calculaTempo(tempos[0]);
+
+/*substituindo o valor do índice (0) pela variável contadora i.
+for (let i = 0; i < contadores.length; i++) {
+    contadores[i].textContent = calculaTempo(tempos[i]);
+    }*/
+
+//função para atualizar o cronômetro e no escopo da função (entre chaves) adicionar o laço de repetição.
+function atualizaCronometro(){
+     for (let i=0; i<contadores.length;i++){
+    contadores[i].textContent = calculaTempo(tempos[i]); } 
+}
+atualizaCronometro();//após a declaração da função, chamamos por ela novamente:
 
 function calculaTempo(tempoObjetivo) {
     let tempoAtual = new Date();
