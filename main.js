@@ -170,9 +170,6 @@ const tempoObjetivo4 = new Date("2024-12-30T00:00:00");
 const tempos =
 [tempoObjetivo1,tempoObjetivo2,tempoObjetivo3,tempoObjetivo4];
 
-//chamar uma função chamada calculaTempo()
-contadores[0].textContent = calculaTempo(tempos[0]);
-
 //laço de repetição que altera automaticamente o valor do índice para 0, 1, 2 e 3,automatizando o código.
 /*for (let i = 0; i < contadores.length; i++) {
     contadores[i].textContent = calculaTempo(tempos[0]);
@@ -234,3 +231,7 @@ function calculaTempo(tempoObjetivo) {
         return "Prazo Finalizado";
     }
 }
+/*se o tempo for menor que zero, devemos programar para
+que seja exibida uma mensagem de que o prazo foi esgotado. Dessa
+forma, a contagem do tempo que resta ocorrerá apenas se esse tempo
+for positivo.*/
