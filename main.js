@@ -159,8 +159,8 @@ contadores[0].textContent = calculaTempo(tempos[0]);
 //laço de repetição que altera automaticamente o valor do índice para 0, 1, 2 e 3,
 /*for (let i = 0; i < contadores.length; i++) {
     contadores[i].textContent = calculaTempo(tempos[0]);
-    }*/
-/*
+    }
+
 //substituindo o valor do índice (0) pela variável contadora i.
 for (let i = 0; i < contadores.length; i++) {
     contadores[i].textContent = calculaTempo(tempos[i]);
