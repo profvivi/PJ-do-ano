@@ -197,8 +197,7 @@ const tempoObjetivo4 = new Date("2024-12-30T00:00:00");
 const tempos =
 [tempoObjetivo1,tempoObjetivo2,tempoObjetivo3,tempoObjetivo4];
 
-//chamar uma função chamada calculaTempo()
-contadores[0].textContent = calculaTempo(tempos[0]);
+
 
 /*substituindo o valor do índice (0) pela variável contadora i.
 for (let i = 0; i < contadores.length; i++) {
