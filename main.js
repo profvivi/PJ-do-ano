@@ -153,10 +153,15 @@ const tempoObjetivo4 = new Date("2024-12-30T00:00:00");
 const tempos =
 [tempoObjetivo1,tempoObjetivo2,tempoObjetivo3,tempoObjetivo4];
 
+//chamar uma função chamada calculaTempo()
 contadores[0].textContent = calculaTempo(tempos[0]);
 
+//laço de repetição que altera automaticamente o valor do índice para 0, 1, 2 e 3,
+/*for (let i = 0; i < contadores.length; i++) {
+    contadores[i].textContent = calculaTempo(tempos[0]);
+    }*/
 
-//chamar uma função chamada calculaTempo()
+//substituindo o valor do índice (0) pela variável contadora i.
 for (let i = 0; i < contadores.length; i++) {
     contadores[i].textContent = calculaTempo(tempos[i]);
     }
