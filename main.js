@@ -125,15 +125,15 @@ for (let i = 0; i < botoes.length; i++) {
         textos[i].classList.add("ativo");
     }
 }
-/*
-//1ª explicação
+
+/*1ª explicação
+
 // definição do tempo dos objetivos
 const contadores = document.querySelectorAll(".contador");
 const tempoObjetivo1 = new Date("2024-10-05T00:00:00");
 const tempoObjetivo2 = new Date("2024-10-30T00:00:00");
 const tempoObjetivo3 = new Date("2024-11-05T00:00:00");
 const tempoObjetivo4 = new Date("2024-12-30T00:00:00");
-
 
 //chamar uma função chamada calculaTempo(), que terá como parâmetro inicial de entrada o tempoObjetivo1.
 contadores[0].textContent = calculaTempo(tempoObjetivo1); //aba de divisão de conteúdo, que vai receber a função
@@ -141,8 +141,24 @@ contadores[1].textContent = calculaTempo(tempoObjetivo2); //aba de divisão de c
 contadores[2].textContent = calculaTempo(tempoObjetivo3); //aba de divisão de conteúdo, que vai receber a função
 contadores[3].textContent = calculaTempo(tempoObjetivo4); //aba de divisão de conteúdo, que vai receber a função
 
-/*
-//2ª explicação - Automatizando o código:
+function calculaTempo(tempoObjetivo) {
+    let tempoAtual = new Date();
+    let tempoFinal = tempoObjetivo - tempoAtual;
+    let segundos = Math.floor(tempoFinal / 1000);
+    let minutos = Math.floor(segundos / 60);
+    let horas = Math.floor(minutos / 60);
+    let dias = Math.floor(horas / 24);
+
+    segundos %= 60;
+    minutos %= 60;
+    horas %= 24;
+ 
+ return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos";
+}
+Fim da 1ª explicação*/ 
+
+/*2ª explicação - Automatizando o código:
+
 // definição do tempo dos objetivos
 const contadores = document.querySelectorAll(".contador");
 const tempoObjetivo1 = new Date("2024-10-05T00:00:00");
@@ -150,13 +166,14 @@ const tempoObjetivo2 = new Date("2024-10-30T00:00:00");
 const tempoObjetivo3 = new Date("2024-11-05T00:00:00");
 const tempoObjetivo4 = new Date("2024-12-30T00:00:00");
 
+//automatizar o código, criar uma variável chamada tempos, que receberá uma lista.
 const tempos =
 [tempoObjetivo1,tempoObjetivo2,tempoObjetivo3,tempoObjetivo4];
 
 //chamar uma função chamada calculaTempo()
 contadores[0].textContent = calculaTempo(tempos[0]);
 
-//laço de repetição que altera automaticamente o valor do índice para 0, 1, 2 e 3,
+//laço de repetição que altera automaticamente o valor do índice para 0, 1, 2 e 3,automatizando o código.
 /*for (let i = 0; i < contadores.length; i++) {
     contadores[i].textContent = calculaTempo(tempos[0]);
     }
@@ -176,6 +193,7 @@ const tempoObjetivo2 = new Date("2024-10-30T00:00:00");
 const tempoObjetivo3 = new Date("2024-11-05T00:00:00");
 const tempoObjetivo4 = new Date("2024-12-30T00:00:00");
 
+//automatizar o código, criar uma variável chamada tempos, que receberá uma lista.
 const tempos =
 [tempoObjetivo1,tempoObjetivo2,tempoObjetivo3,tempoObjetivo4];
 
