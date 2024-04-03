@@ -135,6 +135,9 @@ const tempoObjetivo4 = new Date("2024-12-30T00:00:00");
 
 //chamar uma função chamada calculaTempo(), que terá como parâmetro de entrada o tempoObjetivo1.
 contadores[0].textContent = calculaTempo(tempoObjetivo1);
+contadores[1].textContent = calculaTempo(tempoObjetivo2);
+contadores[2].textContent = calculaTempo(tempoObjetivo3);
+contadores[3].textContent = calculaTempo(tempoObjetivo4);
 
 function calculaTempo(tempoObjetivo) {
     let tempoAtual = new Date();
