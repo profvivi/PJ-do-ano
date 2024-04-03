@@ -209,7 +209,15 @@ function atualizaCronometro(){
      for (let i=0; i<contadores.length;i++){
     contadores[i].textContent = calculaTempo(tempos[i]); } 
 }
-atualizaCronometro();//após a declaração da função, chamamos por ela novamente:
+
+//após a declaração da função, chamamos por ela novamente:
+
+function comecaCronometro(){
+    atualizaCronometro();
+    setInterval(atualizaCronometro,1000);
+}
+
+comecaCronometro();
 
 function calculaTempo(tempoObjetivo) {
     let tempoAtual = new Date();
