@@ -140,7 +140,7 @@ contadores[0].textContent = calculaTempo(tempoObjetivo1); //aba de divisão de c
 contadores[1].textContent = calculaTempo(tempoObjetivo2); //aba de divisão de conteúdo, que vai receber a função
 contadores[2].textContent = calculaTempo(tempoObjetivo3); //aba de divisão de conteúdo, que vai receber a função
 contadores[3].textContent = calculaTempo(tempoObjetivo4); //aba de divisão de conteúdo, que vai receber a função
-*/
+
 /*
 //2ª explicação - Automatizando o código:
 // definição do tempo dos objetivos
@@ -160,7 +160,7 @@ contadores[0].textContent = calculaTempo(tempos[0]);
 /*for (let i = 0; i < contadores.length; i++) {
     contadores[i].textContent = calculaTempo(tempos[0]);
     }*/
-
+/*
 //substituindo o valor do índice (0) pela variável contadora i.
 for (let i = 0; i < contadores.length; i++) {
     contadores[i].textContent = calculaTempo(tempos[i]);
