@@ -125,7 +125,8 @@ for (let i = 0; i < botoes.length; i++) {
         textos[i].classList.add("ativo");
     }
 }
-
+/*
+//1ª explicação
 // definição do tempo dos objetivos
 const contadores = document.querySelectorAll(".contador");
 const tempoObjetivo1 = new Date("2024-10-05T00:00:00");
@@ -139,6 +140,26 @@ contadores[0].textContent = calculaTempo(tempoObjetivo1); //aba de divisão de c
 contadores[1].textContent = calculaTempo(tempoObjetivo2); //aba de divisão de conteúdo, que vai receber a função
 contadores[2].textContent = calculaTempo(tempoObjetivo3); //aba de divisão de conteúdo, que vai receber a função
 contadores[3].textContent = calculaTempo(tempoObjetivo4); //aba de divisão de conteúdo, que vai receber a função
+*/
+
+//2ª explicação - Automatizando o código
+// definição do tempo dos objetivos
+const contadores = document.querySelectorAll(".contador");
+const tempoObjetivo1 = new Date("2024-10-05T00:00:00");
+const tempoObjetivo2 = new Date("2024-10-30T00:00:00");
+const tempoObjetivo3 = new Date("2024-11-05T00:00:00");
+const tempoObjetivo4 = new Date("2024-12-30T00:00:00");
+
+const tempos =
+[tempoObjetivo1,tempoObjetivo2,tempoObjetivo3,tempoObjetivo4];
+
+contadores[0].textContent = calculaTempo(tempos[0]);
+
+
+//chamar uma função chamada calculaTempo()
+for (let i = 0; i < contadores.length; i++) {
+    contadores[i].textContent = calculaTempo(tempos[i]);
+    }
 
 function calculaTempo(tempoObjetivo) {
     let tempoAtual = new Date();
