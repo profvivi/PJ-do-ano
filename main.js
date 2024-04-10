@@ -276,7 +276,7 @@ function calculaTempo(tempoObjetivo) {
         return [dias,horas,minutos,segundos];
     } else {
         //return [0,0,0,0];
-        return "Prazo Finalizado";
+        
     }
 }
 
