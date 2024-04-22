@@ -143,8 +143,13 @@ function atualizaCronometro(){ //adicionar
     }
 }
 
+function comecaCronometro(){
+    atualizaCronometro();
+    setInterval(atualizaCronometro,1000);
+}
 
-    
+comecaCronometro();
+
 
 function calculaTempo(tempoObjetivo) {
     let tempoAtual = new Date();
@@ -158,8 +163,11 @@ function calculaTempo(tempoObjetivo) {
     minutos %= 60;
     horas %= 24;
  
- return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos";
-}
+    if (tempoFinal > 0){
+        return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos"; agora
+    } else {
+        return "Prazo Finalizado";
+    }
 
 /*1ª explicação - adicionar as linhas marcadas abaixo
 
@@ -193,9 +201,27 @@ contadores[3].textContent = calculaTempo(tempoObjetivo4); //aba de divisão de c
 
  for (let i=0; i<contadores.length;i++){ //adicionar
     //Calcular o tempo usando a função e associá-lo ao objetivo
-            contadores[i].textContent = calculaTempo(tempos[i]);// adicioanr  
-    
+            contadores[i].textContent = calculaTempo(tempos[i]); //adicioanr  
 
+//Função de atualização
+function atualizaCronometro(){ //adicioanr  
+    for (let i=0; i<contadores.length;i++){ //adicioanr  
+        contadores[i].textContent = calculaTempo(tempos[i]); //adicioanr    
+    }
+}
+
+function atualizaCronometro(){
+    for (let i=0; i<contadores.length;i++){
+        contadores[i].textContent = calculaTempo(tempos[i]);   
+    }
+}
+
+function comecaCronometro(){
+    atualizaCronometro();
+    setInterval(atualizaCronometro,1000);
+}
+
+comecaCronometro();
 
 /*
 function calculaTempo(tempoObjetivo) {
@@ -210,24 +236,16 @@ function calculaTempo(tempoObjetivo) {
     minutos %= 60;
     horas %= 24;
  
- return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos";
-}
+     return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos";antes
+
+    if (tempoFinal > 0){
+        return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos"; agora
+    } else {
+        return "Prazo Finalizado";
+    }
+
 Fim da 1ª explicação*/ 
 
-/*2ª explicação - Automatizando o código:
-
-
-
-//laço de repetição que altera automaticamente o valor do índice para 0, 1, 2 e 3,automatizando o código.
-/*for (let i = 0; i < contadores.length; i++) {
-    contadores[i].textContent = calculaTempo(tempos[0]);
-    }
-
-//substituindo o valor do índice (0) pela variável contadora i.
-for (let i = 0; i < contadores.length; i++) {
-    contadores[i].textContent = calculaTempo(tempos[i]);
-    }
-*/
 
 //3ª explicação - função para atualizar o cronômetro:
 /*
@@ -260,7 +278,12 @@ function comecaCronometro(){
     setInterval(atualizaCronometro,1000);
 }
 
-comecaCronometro();
+function comecaCronometro(){
+    atualizaCronometro();
+    setInterval(atualizaCronometro,1000);
+}
+
+
 
 function calculaTempo(tempoObjetivo) {
     let tempoAtual = new Date();
