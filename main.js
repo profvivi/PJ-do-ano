@@ -158,12 +158,12 @@ function atualizaCronometro(){ //adicionar
     }
 }
 
-function comecaCronometro(){
-    atualizaCronometro();
-    setInterval(atualizaCronometro,1000);
+function comecaCronometro(){ //adicionar
+    atualizaCronometro(); //adicionar
+    setInterval(atualizaCronometro,1000); //adicionar
 }
 
-comecaCronometro();
+comecaCronometro(); //adicionar
 
 
 /*Explicação - adicionar as linhas marcadas abaixo
