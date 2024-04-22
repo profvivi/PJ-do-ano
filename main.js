@@ -135,6 +135,12 @@ const tempos = [tempoObjetivo1,tempoObjetivo2,tempoObjetivo3,tempoObjetivo4];//a
 
 contadores[0].textContent = calculaTempo(tempos[0]); //adicionar
 
+for (let i=0; i<contadores.length;i++){ //adicionar
+    contadores[i].textContent = calculaTempo(tempos[i]); //adicionar
+
+
+    
+
 function calculaTempo(tempoObjetivo) {
     let tempoAtual = new Date();
     let tempoFinal = tempoObjetivo - tempoAtual;
@@ -174,8 +180,18 @@ contadores[3].textContent = calculaTempo(tempoObjetivo4); //aba de divisão de c
 
  contadores[0].textContent = calculaTempo(tempos[0]); //adicionar
 
+ /*Obs: somente o primeiro contador recebeu a contagem de tempo então:
+ Laço de repetição, mover a linha contadores[0].textContent = calculaTempo(tempos[0]);, que se refere à nossa lista contadores, 
+ para dentro do nosso laço de repetição.*/
+
+ /* Para cada objetivo na lista de contadores
+ for (let i=0; i<contadores.length;i++){ 
+    //Calcular o tempo usando a função e associá-lo ao objetivo
+            contadores[i].textContent = calculaTempo(tempos[i]);*/   
+    
 
 
+/*Laço de repetição
 function calculaTempo(tempoObjetivo) {
     let tempoAtual = new Date();
     let tempoFinal = tempoObjetivo - tempoAtual;
