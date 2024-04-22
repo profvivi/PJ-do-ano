@@ -137,6 +137,13 @@ for (let i=0; i<contadores.length;i++){ //adicionar
     contadores[i].textContent = calculaTempo(tempos[i]); //adicionar
 }
 
+function atualizaCronometro(){
+    for (let i=0; i<contadores.length;i++){
+        contadores[i].textContent = calculaTempo(tempos[i]);   
+    }
+}
+
+
     
 
 function calculaTempo(tempoObjetivo) {
