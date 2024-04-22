@@ -137,9 +137,9 @@ for (let i=0; i<contadores.length;i++){ //adicionar
     contadores[i].textContent = calculaTempo(tempos[i]); //adicionar
 }
 
-function atualizaCronometro(){
-    for (let i=0; i<contadores.length;i++){
-        contadores[i].textContent = calculaTempo(tempos[i]);   
+function atualizaCronometro(){ //adicionar
+    for (let i=0; i<contadores.length;i++){ //adicionar
+        contadores[i].textContent = calculaTempo(tempos[i]);  //adicionar 
     }
 }
 
@@ -190,13 +190,14 @@ contadores[3].textContent = calculaTempo(tempoObjetivo4); //aba de divisão de c
  para dentro do nosso laço de repetição.*/
 
  /* Laço de repetição, para cada objetivo na lista de contadores
- for (let i=0; i<contadores.length;i++){ 
+
+ for (let i=0; i<contadores.length;i++){ //adicionar
     //Calcular o tempo usando a função e associá-lo ao objetivo
-            contadores[i].textContent = calculaTempo(tempos[i]);*/   
+            contadores[i].textContent = calculaTempo(tempos[i]);// adicioanr  
     
 
 
-/*Laço de repetição
+/*
 function calculaTempo(tempoObjetivo) {
     let tempoAtual = new Date();
     let tempoFinal = tempoObjetivo - tempoAtual;
