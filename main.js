@@ -168,6 +168,7 @@ function calculaTempo(tempoObjetivo) {
     } else {
         return "Prazo Finalizado";
     }
+}
 
 /*1ª explicação - adicionar as linhas marcadas abaixo
 
