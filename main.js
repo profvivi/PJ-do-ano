@@ -164,7 +164,7 @@ function calculaTempo(tempoObjetivo) {
     horas %= 24;
  
     if (tempoFinal > 0){
-        return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos"; agora
+        return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos"; //agora
     } else {
         return "Prazo Finalizado";
     }
