@@ -133,8 +133,6 @@ const tempoObjetivo4 = new Date("2024-12-30T00:00:00"); //adicionar
 
 const tempos = [tempoObjetivo1,tempoObjetivo2,tempoObjetivo3,tempoObjetivo4];//adicionar
 
-contadores[0].textContent = calculaTempo(tempos[0]); //adicionar
-
 for (let i=0; i<contadores.length;i++){ //adicionar
     contadores[i].textContent = calculaTempo(tempos[i]); //adicionar
 
@@ -178,13 +176,13 @@ contadores[3].textContent = calculaTempo(tempoObjetivo4); //aba de divisão de c
  //Assim podemos alterar somente a nossa função, ou seja, ao invés de chamar o tempoObjetivo1 nos vamos chamar a várivel tempos[0]`:
  contadores[0].textContent = calculaTempo(tempoObjetivo1); //excluir
 
- contadores[0].textContent = calculaTempo(tempos[0]); //adicionar
+ contadores[0].textContent = calculaTempo(tempos[0]); //adicionar e remover 
 
  /*Obs: somente o primeiro contador recebeu a contagem de tempo então:
  Laço de repetição, mover a linha contadores[0].textContent = calculaTempo(tempos[0]);, que se refere à nossa lista contadores, 
  para dentro do nosso laço de repetição.*/
 
- /* Para cada objetivo na lista de contadores
+ /* Laço de repetição, para cada objetivo na lista de contadores
  for (let i=0; i<contadores.length;i++){ 
     //Calcular o tempo usando a função e associá-lo ao objetivo
             contadores[i].textContent = calculaTempo(tempos[i]);*/   
