@@ -135,7 +135,7 @@ const tempos = [tempoObjetivo1,tempoObjetivo2,tempoObjetivo3,tempoObjetivo4];//a
 
 for (let i=0; i<contadores.length;i++){ //adicionar
     contadores[i].textContent = calculaTempo(tempos[i]); //adicionar
-
+}
 
     
 
