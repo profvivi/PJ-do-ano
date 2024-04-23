@@ -163,17 +163,59 @@ function comecaCronometro(){ //adicionado
     setInterval(atualizaCronometro,1000); //adicionado
 }
 
+<<<<<<< HEAD
+//Substituir a função chamada calculaTempo()
+//automatizar o código, criar uma variável chamada tempos, que receberá uma lista.
+const tempos =[tempoObjetivo1,tempoObjetivo2,tempoObjetivo3,tempoObjetivo4];
+=======
 comecaCronometro(); //adicionado
+>>>>>>> 86fa85d22e3c8d000f6367765070c8f8a1a3f596
 
+<<<<<<< HEAD
+//laço de repetição que altera automaticamente o valor do índice para 0, 1, 2 e 3,automatizando o código.
+for (let i = 0; i < contadores.length; i++) {
+    contadores[i].textContent = calculaTempo(tempos[0]);
+    }
+=======
+>>>>>>> 86fa85d22e3c8d000f6367765070c8f8a1a3f596
 
+<<<<<<< HEAD
+//substituindo o valor do índice (0) pela variável contadora i.
+for (let i = 0; i < contadores.length; i++) {
+    contadores[i].textContent = calculaTempo(tempos[i]);
+    }
+=======
 /*Aula7 - Explicação - adicionar as linhas marcadas abaixo
+>>>>>>> 86fa85d22e3c8d000f6367765070c8f8a1a3f596
 
-// Adicionando outros objetivos, definição do tempo dos objetivos
+<<<<<<< HEAD
+function calculaTempo(tempoObjetivo) {
+    let tempoAtual = new Date();
+    let tempoFinal = tempoObjetivo - tempoAtual;
+    let segundos = Math.floor(tempoFinal / 1000);
+    let minutos = Math.floor(segundos / 60);
+    let horas = Math.floor(minutos / 60);
+    let dias = Math.floor(horas / 24);
+
+    segundos %= 60;
+    minutos %= 60;
+    horas %= 24;
+ 
+ return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos";
+}
+Fim da 2ª explicação */
+
+//3ª explicação - função para atualizar o cronômetro:
+
+// definição do tempo dos objetivos
+=======
+/* Adicionando outros objetivos, definição do tempo dos objetivos
+>>>>>>> 86fa85d22e3c8d000f6367765070c8f8a1a3f596
 const contadores = document.querySelectorAll(".contador");
 const tempoObjetivo1 = new Date("2024-09-05T00:00:00");
 const tempoObjetivo2 = new Date("2024-10-30T00:00:00"); //adicionar
 const tempoObjetivo3 = new Date("2024-11-05T00:00:00"); //adicionar
-const tempoObjetivo4 = new Date("2024-12-30T00:00:00"); //adicionar
+const tempoObjetivo4 = new Date("2024-12-30T00:00:00"); //adicionar*/
 
 /*OBSERVAÇÃO: chamar uma função chamada calculaTempo(), que terá como parâmetro inicial de entrada o tempoObjetivo1
 adicionar os elementos da classe contador dentro do nosso conteúdo para que a função calculaTempo seja efetiva
