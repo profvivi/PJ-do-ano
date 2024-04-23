@@ -163,6 +163,7 @@ function comecaCronometro(){ //adicionado
     setInterval(atualizaCronometro,1000); //adicionado
 }
 
+comecaCronometro(); //adicionado
 /*
 //Substituir a função chamada calculaTempo()
 //automatizar o código, criar uma variável chamada tempos, que receberá uma lista.
