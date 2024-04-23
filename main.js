@@ -163,7 +163,7 @@ function comecaCronometro(){ //adicionado
     setInterval(atualizaCronometro,1000); //adicionado
 }
 
-
+/*
 //Substituir a função chamada calculaTempo()
 //automatizar o código, criar uma variável chamada tempos, que receberá uma lista.
 const tempos =[tempoObjetivo1,tempoObjetivo2,tempoObjetivo3,tempoObjetivo4];
@@ -183,6 +183,7 @@ for (let i = 0; i < contadores.length; i++) {
 for (let i = 0; i < contadores.length; i++) {
     contadores[i].textContent = calculaTempo(tempos[i]);
     }
+
 
 /*Aula7 - Explicação - adicionar as linhas marcadas abaixo
 
