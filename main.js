@@ -181,3 +181,7 @@ function comecaCronometro(){ //adicionado
 }
 
 comecaCronometro(); //adicionado
+
+//Aula8
+//Aula9 - Continuação aula8
+//Aula10
